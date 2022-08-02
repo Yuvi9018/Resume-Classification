@@ -1,0 +1,41 @@
+<h1>
+    Resume Classification
+    <h1>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='\style.css') }}">
+        <div class="row">
+            <!--<img src="C:/Users/Win-10/Desktop/Data science/Resume Classification/temp/plot.png" style="width:700px;height:560px;" />-->
+			<!--<img src="plot.png" alt="barchart of appliers" style="width:700px;height:560px;">/>-->
+
+            <form action='/predict' method="post" class="col s12">
+
+                <body style="background-color:LightGray;">
+				
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <label for="first_name"><b> Please paste path : </b></label>
+                            <br>
+                            <input placeholder="paste path here" name="Days" id="first_name" type="text" class="validate">
+                        </div>
+						
+                    </div>
+
+                    <div class="row center">
+
+                        <button type="submit" class="btn-large waves-effect waves-light orange">Enter </button>
+            
+                    <button type="" </div>
+					
+			</form>
+	</div>
+
+
+  <table >
+	
+    <tr >
+        {% for table in tables %}
+           {{ table|safe }}
+        {% endfor %} 
+      </tr>
+  </table>
+
+</div>
